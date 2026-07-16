@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Zara Ali – Beauty for Everyone</title>
+    <meta name="description" content="Zara Ali is your expert, inclusive destination for premium beauty: makeup, skincare, haircare, and fragrance. Easy navigation, real reviews, virtual try-on, and responsible sourcing." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar" aria-label="Main Site Navigation">
+        <div class="container nav-container">
+          <a href="#hero" class="logo" aria-label="Zara Ali Home"><span aria-hidden="true">💄</span> <span class="logo-text">Zara Ali</span></a>
+          <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#tryon">Virtual Try-On</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#ugc">Real Looks</a></li>
+            <li><a href="#sustainability">Ethics</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-wrap">
+          <div class="hero-content">
+            <h1>Beauty for Every Body, Mind & Mood</h1>
+            <p class="hero-lead">Inclusive, expert-curated makeup & skincare. Find your perfect fit with Zara Ali – where beauty meets real life.</p>
+            <a href="#shop" class="btn btn-primary">Shop Now</a>
+            <ul class="hero-benefits">
+              <li><span class="icon-star" aria-hidden="true"></span> Personalized Picks</li>
+              <li><span class="icon-heart" aria-hidden="true"></span> Real Reviews</li>
+              <li><span class="icon-leaf" aria-hidden="true"></span> Ethically Sourced</li>
+            </ul>
+          </div>
+          <div class="hero-visual">
+            <img src="https://www.sephora.com/contentimages/2026-07-15_cs-bestsellers_site_hp_hero-banner-v2_us_gr_slice-01.jpg?imwidth=640" alt="Three diverse models with glowing makeup and joy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-filters fade-section" id="shop">
+        <div class="container">
+          <h2>Shop by Need</h2>
+          <nav class="filters-nav" aria-label="Filter categories">
+            <button class="filter-btn" aria-pressed="true" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="skin">Skin Type</button>
+            <button class="filter-btn" data-filter="hair">Hair Type</button>
+            <button class="filter-btn" data-filter="vegan">Vegan</button>
+            <button class="filter-btn" data-filter="sample">Try a Sample</button>
+            <button class="filter-btn" data-filter="travel">Travel Size</button>
+            <button class="filter-btn" data-filter="auto">Auto-Replenish</button>
+          </nav>
+          <div class="products-grid" id="products">
+            <!-- Example products, extend as needed -->
+            <article class="product-card" data-type="skin vegan sample">
+              <img src="https://www.sephora.com/productimages/sku/s2981116-main-zoom.jpg?imwidth=340" alt="rhode Pocket Bronze Long-Wearing Cream Bronzer, clean vegan formula" />
+              <div>
+                <h3>Pocket Bronze Cream Bronzer</h3>
+                <span class="badge vegan">Vegan</span>
+                <div class="card-rating" aria-label="4.6 out of 5 stars"><span>⭐</span>4.6 (309)</div>
+                <p class="p-sm">Suits oily and sensitive skin. Mini & Sample sizes available.</p>
+                <a class="btn btn-secondary" href="#">Quick Shop</a>
+              </div>
+            </article>
+            <article class="product-card" data-type="hair sample auto">
+              <img src="https://www.sephora.com/productimages/sku/s2869592-main-zoom.jpg?imwidth=340" alt="Nécessaire Rosemary Shampoo For Thinning Hair, suitable for all hair types" />
+              <div>
+                <h3>Rosemary Shampoo</h3>
+                <span class="badge auto">Auto-Replenish</span>
+                <div class="card-rating" aria-label="4.7 out of 5 stars"><span>⭐</span>4.7 (445)</div>
+                <p class="p-sm">Luxurious scalp-focused care, perfect for thinning hair. Free Sample + Subscription!</p>
+                <a class="btn btn-secondary" href="#">Quick Shop</a>
+              </div>
+            </article>
+            <article class="product-card" data-type="skin vegan travel">
+              <img src="https://www.sephora.com/productimages/sku/s2968907-main-zoom.jpg?imwidth=340" alt="Summer Fridays Lip Butter Balm, nourishing and hydrating mini" />
+              <div>
+                <h3>Lip Butter Balm</h3>
+                <span class="badge travel">Travel Size</span>
+                <div class="card-rating" aria-label="4.8 out of 5 stars"><span>⭐</span>4.8 (17.6K)</div>
+                <p class="p-sm">Super-hydrating, non-sticky. Take everywhere.</p>
+                <a class="btn btn-secondary" href="#">Quick Shop</a>
+              </div>
+            </article>
+            <article class="product-card" data-type="fragrance sample">
+              <img src="https://www.sephora.com/productimages/sku/s2249696-main-zoom.jpg?imwidth=340" alt="Valentino Donna Born in Roma Eau de Parfum, sample and giftable" />
+              <div>
+                <h3>Born in Roma Perfume</h3>
+                <span class="badge sample">Sample</span>
+                <div class="card-rating" aria-label="4.9 out of 5 stars"><span>⭐</span>4.9 (2.9K)</div>
+                <p class="p-sm">Floral, sweet, and bold. Sample pack available!</p>
+                <a class="btn btn-secondary" href="#">Quick Shop</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories fade-section" id="categories">
+        <div class="container">
+          <h2>Explore by Category</h2>
+          <div class="category-grid">
+            <a class="category-card" href="#" tabindex="0">
+              <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_makeup_mascara_lipstick_us_ca_rwd_slice.jpg?imwidth=180" alt="Lip and makeup collection" />
+              <span>Makeup</span>
+            </a>
+            <a class="category-card" href="#" tabindex="0">
+              <img src="https://www.sephora.com/contentimages/homepage/091322/Homepage/RWD/kskin-Icon.jpg?imwidth=180" alt="Korean skincare items" />
+              <span>Skincare</span>
+            </a>
+            <a class="category-card" href="#" tabindex="0">
+              <img src="https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_fragrance_bottle_us_ca_rwd_slice.jpg?imwidth=180" alt="Perfume bottle" />
+              <span>Fragrance</span>
+            </a>
+            <a class="category-card" href="#" tabindex="0">
+              <img src="https://www.sephora.com/productimages/sku/s2869592-main-zoom.jpg?imwidth=180" alt="Hair products" />
+              <span>Hair</span>
+            </a>
+            <a class="category-card" href="#" tabindex="0">
+              <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/sale%2032@3x.jpg?imwidth=180" alt="Sale icon" />
+              <span>Sale & Offers</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="try-on fade-section" id="tryon">
+        <div class="container tryon-grid">
+          <div class="tryon-info">
+            <h2>Virtual Try-On: See Your Next Look, Instantly</h2>
+            <p>Upload a photo or launch live camera to virtually test makeup shades, foundation, and more. Explore your style safely and confidently!</p>
+            <div class="tryon-actions">
+              <a class="btn btn-primary" href="#">Try Makeup</a>
+              <a class="btn btn-secondary" href="#">Match My Foundation</a>
+            </div>
+            <small>All results are private & never saved.</small>
+          </div>
+          <div class="tryon-visual">
+            <img src="https://www.sephora.com/contentimages/2026-05-28_summer-fridays-bronzer-and-brush_site_hp_mktg-banner-1200x800_us-can_2834.jpg?imwidth=400" alt="Woman using mobile to try-on a lipstick shade virtually" />
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews fade-section" id="reviews">
+        <div class="container">
+          <h2>What Real Customers Say</h2>
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="review-stars" aria-label="5 stars">★★★★★</div>
+              <p class="review-text">So easy to find products for my sensitive skin. The filtering is a gamechanger!</p>
+              <div class="review-user">
+                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Emma, 29, happy customer" />
+                <span>Emma, 29</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="4.5 stars">★★★★☆</div>
+              <p class="review-text">The try-on tool was spot on for my foundation shade. Love the detailed reviews!</p>
+              <div class="review-user">
+                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Lucas, 35, reviewer" />
+                <span>Lucas, 35</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="5 stars">★★★★★</div>
+              <p class="review-text">Finally, clear info on ingredients & great eco values! I feel safe buying here.</p>
+              <div class="review-user">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya, 41, reviewer" />
+                <span>Priya, 41</span>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-stars" aria-label="5 stars">★★★★★</div>
+              <p class="review-text">I love the auto-ship for my go-tos and discovering new minis!</p>
+              <div class="review-user">
+                <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Alex, 26, reviewer" />
+                <span>Alex, 26</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="ugc fade-section" id="ugc">
+        <div class="container">
+          <h2>Your Real Looks</h2>
+          <div class="ugc-grid">
+            <figure class="ugc-card">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=300&h=300&facepad=2" alt="Customer selfie: soft pink blush look" />
+              <figcaption>@blushqueen <span>• Soft pink cheeks with Rhode bronzer</span></figcaption>
+            </figure>
+            <figure class="ugc-card">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=300&h=300&facepad=2" alt="Customer glam eye and bold lip" />
+              <figcaption>@glamitup <span>• Bold purple eye & Summer Fridays lips</span></figcaption>
+            </figure>
+            <figure class="ugc-card">
+              <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=facearea&w=300&h=300&facepad=2" alt="Natural glow no-makeup look" />
+              <figcaption>@skinfirst <span>• Glowy & fresh with Nécessaire</span></figcaption>
+            </figure>
+            <figure class="ugc-card">
+              <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=facearea&w=300&h=300&facepad=2" alt="Creative, artistic makeup customer" />
+              <figcaption>@artistry_jay <span>• Editorial contrast look</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="sustainability fade-section" id="sustainability">
+        <div class="container">
+          <h2>Sustainability & Ethical Sourcing</h2>
+          <div class="sustainability-grid">
+            <div class="sustain-card">
+              <h3>Responsible Ingredients</h3>
+              <p>100% cruelty-free brands.<br>Over 80% formulas with natural or clean lab-ingredients.<br><span aria-label="leaf">🌱</span></p>
+            </div>
+            <div class="sustain-card">
+              <h3>Conscious Packaging</h3>
+              <p>Refillable, recyclable, or compostable options.<br>Minimalist design to reduce waste.<br><span aria-label="recycle">♻️</span></p>
+            </div>
+            <div class="sustain-card">
+              <h3>Ethical Sourcing</h3>
+              <p>Supplier audits & fair labor standards.<br>Supporting women-owned brands and small makers.<br><span aria-label="handshake">🤝</span></p>
+            </div>
+          </div>
+          <a href="#" class="btn btn-secondary">Read Our Full Impact Report</a>
+        </div>
+      </section>
+
+      <section class="faq fade-section" id="faq">
+        <div class="container">
+          <h2>Beauty FAQs</h2>
+          <div class="faq-list" role="list">
+            <details class="faq-item" open>
+              <summary>How do I know if a product is safe for my skin type?</summary>
+              <div>
+                All product pages allow you to filter based on your unique needs (dry, oily, sensitive, etc.), and every listing includes a full ingredient breakdown with potential irritant notes.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Are all products cruelty-free or vegan?</summary>
+              <div>
+                We only stock cruelty-free brands. Vegan filters are available – look for the <span class="badge vegan">vegan</span> badge on each eligible product.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Can I try samples before buying?</summary>
+              <div>
+                Yes! Choose samples at checkout, or shop dedicated sample sizes and travel-friendly sets, perfect for discovering new favorites.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>Is there auto-replenish or a subscription option?</summary>
+              <div>
+                Most essentials are available as a one-time purchase or convenient auto-delivery – just toggle on the auto-replenish option on eligible products!
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>How are reviews moderated for authenticity?</summary>
+              <div>
+                Only verified buyers can leave reviews, and every review is checked for real customer experience—so you can shop with confidence.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="accessibility fade-section" id="accessibility">
+        <div class="container">
+          <h2>Accessibility & Inclusion Promise</h2>
+          <p>We believe everyone deserves a joyful, seamless beauty experience. <br>
+            <strong>Our site meets or exceeds WCAG 2.1 AA standards.</strong>
+          </p>
+          <ul class="access-list">
+            <li>Every image has meaningful descriptive alt text.</li>
+            <li>Color choices provide high contrast and clear readability.</li>
+            <li>Keyboard and screen reader navigable — visible focus indicators on all interactive elements.</li>
+            <li>ARIA labels support complex navigation.</li>
+            <li>Video and multimedia include captions and transcripts.</li>
+            <li>We welcome feedback: <a href="#">Contact Accessibility Team</a></li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Read Our Full Accessibility Policy</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <span class="logo"><span aria-hidden="true">💄</span> Zara Ali</span>
+          <p>Inclusive. Expert. Responsible.<br>&copy; 2024 Zara Ali Cosmetics</p>
+        </div>
+        <div class="footer-links">
+          <nav aria-label="Footer Navigation">
+            <ul>
+              <li><a href="#sustainability">Sustainability</a></li>
+              <li><a href="#accessibility">Accessibility</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><span class="icon-instagram" aria-hidden="true"></span></a>
+          <a href="#" aria-label="TikTok"><span class="icon-tiktok" aria-hidden="true"></span></a>
+          <a href="#" aria-label="Pinterest"><span class="icon-pinterest" aria-hidden="true"></span></a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="chat-widget-root"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
